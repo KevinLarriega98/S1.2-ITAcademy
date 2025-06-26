@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 30px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+}
+
+/* Estilo base del menú oculto */
+.nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #5267DF;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #FA5959;
+    color: white;
+}
+
+/* Menú activo */
+.navbar.open .nav-links {
+    display: flex;
+    gap: 0;
+}
+
+.navbar.open .nav-links li {
+    border-top: 1px solid black;
+    width: 90%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar.open .nav-links .btn {
+    width: 100%;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.navbar.open .nav-links .btn-secondary {
+    background-color: transparent;
+    color: black;
+}
+
+/* Separación del contenido */
+main {
+    padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0;
+        align-items: center;
+        background: transparent;
+    }
+
+    .nav-links li {
+        border-top: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav-links .btn {
+        padding: 0.5rem 1.2rem;
+        width: auto;
+    }
+}
