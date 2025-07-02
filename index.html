@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Bookmark</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
@@ -16,7 +16,7 @@
                 <img src="icons/logo-bookmark.svg" alt="Logo Bookmark" />
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="nav-links">
                 <li><a href="#features">FEATURES</a></li>
@@ -26,6 +26,142 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-media">
+                    <div class="blue-background"></div>
+                    <img src="icons/illustration-hero.svg" alt="Bookmark app illustration" class="hero-image" />
+                </div>
+                <div class="hero-text">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see
+                        your sites load instantly. Try it for free.</p>
+                    <div class="buttons">
+                        <button class="btn btn-primary">Get it on Chrome</button>
+                        <button class="btn btn-terciary">Get it on Firefox</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-container">
+                <div class="feature-text">
+                    <h1>Features</h1>
+                    <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks
+                        sync between your devices to you can access them on the go.</p>
+                </div>
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <div class="tab-div">
+                            <button class="tab-btn active" data-tab="1">Simple Bookmarking</button>
+                        </div>
+                        <div class="tab-div">
+                            <button class="tab-btn" data-tab="2">Speedy Searching</button>
+                        </div>
+                        <div class="tab-div">
+                            <button class="tab-btn" data-tab="3">Easy Sharing</button>
+                        </div>
+                    </div>
+                    <div class="tab-content active" data-content="1">
+                        <div class="hero">
+                            <div class="container">
+                                <div class="tab-media">
+                                    <div class="tab-blue-background"></div>
+                                    <img src="icons/illustration-features-tab-1.svg" alt="Illustration features tab 1"
+                                        class="hero-image" />
+                                </div>
+                                <div class="tab-text">
+                                    <h1>Bookmark in one click</h1>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                        gives
+                                        you
+                                        complete control over how you manage your favourite sites.</p>
+                                    <button class="btn btn-primary tab-content-btn">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-content="2">
+                        <div class="hero">
+                            <div class="container">
+                                <div class="tab-media">
+                                    <div class="tab-blue-background"></div>
+                                    <img src="icons/illustration-features-tab-2.svg" alt="Illustration features tab 2"
+                                        class="hero-image" />
+                                </div>
+                                <div class="tab-text">
+                                    <h1>Intelligent search</h1>
+                                    <p>Our powerful search feature will help you find saved sites in no time at all. No
+                                        need to trawl through all of your bookmarks.</p>
+                                    <button class="btn btn-primary tab-content-btn">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-content="3">
+                        <div class="hero">
+                            <div class="container">
+                                <div class="tab-media">
+                                    <div class="tab-blue-background"></div>
+                                    <img src="icons/illustration-features-tab-3.svg" alt="Illustration features tab 3"
+                                        class="hero-image" />
+                                </div>
+                                <div class="tab-text">
+                                    <h1>Share your bookmarks</h1>
+                                    <p>Easily share your bookmarks and collections with others. Create a shareable link
+                                        that you can send at the click of a button.</p>
+                                    <button class="btn btn-primary tab-content-btn">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download">
+            <div class="feature-text">
+                <h1>Download the extension</h1>
+                <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like
+                    us to prioritize.</p>
+            </div>
+            <div class="download-cards">
+                <div class="cards">
+                    <div class="content-card">
+                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
+                        <h1>Add to Chrome</h1>
+                        <p>Minimum version 62</p>
+                    </div>
+                    <div class="download-button">
+                        <button class="btn btn-primary">Add & install Extension</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="content-card">
+                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
+                        <h1>Add to Chrome</h1>
+                        <p>Minimum version 62</p>
+                    </div>
+                    <div class="download-button">
+                        <button class="btn btn-primary">Add & install Extension</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="content-card">
+                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
+                        <h1>Add to Chrome</h1>
+                        <p>Minimum version 62</p>
+                        <!-- <img src="icons/bg-dots.svg" alt="dots" class="card-dots"> -->
+                    </div>
+                    <div class="download-button">
+                        <button class="btn btn-primary">Add & install Extension</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
