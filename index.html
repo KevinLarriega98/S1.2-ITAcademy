@@ -3,31 +3,35 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landing Bookmark</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <a href="#" class="logo">
-                <img src="icons/logo-bookmark.svg" alt="Logo Bookmark" />
+                <img src="icons/logo-bookmark.svg" alt="Logo Bookmark" id="logo" />
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fa-solid fa-bars"></i>
+                <img src="icons/icon-hamburger.svg" alt="Menu icon" id="menu-icon" />
             </button>
             <ul class="nav-links">
                 <li><a href="#features">FEATURES</a></li>
                 <li><a href="#pricing">PRICING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li><button class="btn btn-secondary">LOGIN</button></li>
+                <li class="social-icons">
+                    <a href="#"><img src="icons/icon-facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="icons/icon-twitter.svg" alt="Twitter" /></a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-media">
@@ -46,12 +50,13 @@
             </div>
         </section>
 
+        <!-- Features Section with Tabs -->
         <section class="feature">
             <div class="feature-container">
                 <div class="feature-text">
                     <h1>Features</h1>
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks
-                        sync between your devices to you can access them on the go.</p>
+                        sync between your devices so you can access them on the go.</p>
                 </div>
                 <div class="tabs">
                     <div class="tab-buttons">
@@ -70,15 +75,13 @@
                             <div class="container">
                                 <div class="tab-media">
                                     <div class="tab-blue-background"></div>
-                                    <img src="icons/illustration-features-tab-1.svg" alt="Illustration features tab 1"
+                                    <img src="icons/illustration-features-tab-1.svg" alt="Illustration feature 1"
                                         class="hero-image" />
                                 </div>
                                 <div class="tab-text">
                                     <h1>Bookmark in one click</h1>
                                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-                                        gives
-                                        you
-                                        complete control over how you manage your favourite sites.</p>
+                                        gives you complete control over how you manage your favourite sites.</p>
                                     <button class="btn btn-primary tab-content-btn">More info</button>
                                 </div>
                             </div>
@@ -89,7 +92,7 @@
                             <div class="container">
                                 <div class="tab-media">
                                     <div class="tab-blue-background"></div>
-                                    <img src="icons/illustration-features-tab-2.svg" alt="Illustration features tab 2"
+                                    <img src="icons/illustration-features-tab-2.svg" alt="Illustration feature 2"
                                         class="hero-image" />
                                 </div>
                                 <div class="tab-text">
@@ -106,7 +109,7 @@
                             <div class="container">
                                 <div class="tab-media">
                                     <div class="tab-blue-background"></div>
-                                    <img src="icons/illustration-features-tab-3.svg" alt="Illustration features tab 3"
+                                    <img src="icons/illustration-features-tab-3.svg" alt="Illustration feature 3"
                                         class="hero-image" />
                                 </div>
                                 <div class="tab-text">
@@ -121,6 +124,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Download Extensions Section -->
         <section class="download">
             <div class="feature-text">
                 <h1>Download the extension</h1>
@@ -130,38 +135,120 @@
             <div class="download-cards">
                 <div class="cards">
                     <div class="content-card">
-                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
+                        <img src="icons/logo-chrome.svg" alt="Chrome logo" class="browser-image" />
                         <h1>Add to Chrome</h1>
                         <p>Minimum version 62</p>
                     </div>
+                    <img src="icons/bg-dots.svg" alt="Card decorative dots" class="card-dots" />
                     <div class="download-button">
                         <button class="btn btn-primary">Add & install Extension</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="content-card">
-                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
-                        <h1>Add to Chrome</h1>
-                        <p>Minimum version 62</p>
+                        <img src="icons/logo-firefox.svg" alt="Firefox logo" class="browser-image" />
+                        <h1>Add to Firefox</h1>
+                        <p>Minimum version 55</p>
                     </div>
+                    <img src="icons/bg-dots.svg" alt="Card decorative dots" class="card-dots" />
                     <div class="download-button">
                         <button class="btn btn-primary">Add & install Extension</button>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="content-card">
-                        <img src="icons/logo-chrome.svg" alt="Browser 1" class="browser-image">
-                        <h1>Add to Chrome</h1>
-                        <p>Minimum version 62</p>
-                        <!-- <img src="icons/bg-dots.svg" alt="dots" class="card-dots"> -->
+                        <img src="icons/logo-opera.svg" alt="Opera logo" class="browser-image" />
+                        <h1>Add to Opera</h1>
+                        <p>Minimum version 46</p>
                     </div>
+                    <img src="icons/bg-dots.svg" alt="Card decorative dots" class="card-dots" />
                     <div class="download-button">
                         <button class="btn btn-primary">Add & install Extension</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- FAQ Section -->
+        <section class="download">
+            <div class="feature-text">
+                <h1>Frequently Asked Questions</h1>
+                <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to
+                    email us.</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-question">
+                        What is Bookmark?
+                        <img src="icons/icon-arrow.svg" alt="arrow icon" class="arrow-icon" />
+                    </button>
+                    <div class="accordion-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-question">
+                        How can I request a new browser?
+                        <img src="icons/icon-arrow.svg" alt="arrow icon" class="arrow-icon" />
+                    </button>
+                    <div class="accordion-answer">
+                        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-question">
+                        Is there a mobile app?
+                        <img src="icons/icon-arrow.svg" alt="arrow icon" class="arrow-icon" />
+                    </button>
+                    <div class="accordion-answer">
+                        <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-question">
+                        What about other Chromium browsers?
+                        <img src="icons/icon-arrow.svg" alt="arrow icon" class="arrow-icon" />
+                    </button>
+                    <div class="accordion-answer">
+                        <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-accordion">
+                <button class="btn btn-primary">More info</button>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="email-footer">
+            <div class="email-text">
+                <p>35.000+ ALREADY JOINED</p>
+                <h1>Stay up-to-date with what we're doing</h1>
+            </div>
+            <div class="email-input">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                <button type="submit" class="btn btn-secondary">Contact us</button>
+            </div>
+        </div>
+        <div class="links-footer">
+            <ul class="footer-list">
+                <li>
+                    <a href="#">
+                        <img src="icons/logo-bookmark-white.svg" alt="Logo Bookmark" />
+                    </a>
+                </li>
+                <li><a href="#features" class="links">FEATURES</a></li>
+                <li><a href="#pricing" class="links">PRICING</a></li>
+                <li><a href="#contact" class="links">CONTACT</a></li>
+            </ul>
+            <div class="social-icons-footer">
+                <a href="#"><img src="icons/icon-facebook.svg" alt="Facebook" /></a>
+                <a href="#"><img src="icons/icon-twitter.svg" alt="Twitter" /></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
