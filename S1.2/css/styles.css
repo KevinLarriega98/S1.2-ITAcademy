@@ -700,12 +700,11 @@ main {
     }
 
     .container {
-        justify-content: flex-start;
-        padding: 0 3rem;
+        justify-content: center;
     }
 
     .blue-background {
-        width: 115%;
+        width: 91%;
     }
 
     .tab-blue-background {
