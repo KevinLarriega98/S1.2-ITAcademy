@@ -51,6 +51,8 @@ npx tailwindcss -i ./input.css -o ./src/output.css --watch
 
 > 📁 `input.css` is where Tailwind is imported. `output.css` is the compiled version.
 
+---
+
 ## 🛠 Technologies Used
 
 - Tailwind CSS
