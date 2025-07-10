@@ -1,5 +1,2 @@
 # Node.js dependencies
 node_modules/
-
-# Sass: source maps
-*.css.map
